@@ -1,0 +1,33 @@
+<div id="person">
+<h2><%- content.employerChangeHeading_text %><span><%=Person.getFullName() %></span></h2>
+
+<div class="control-group">
+    <div class="controls">
+        <fieldset id="Fieldset3" class="" data-error-style="inline">
+            <legend>
+                <%- content.employerChangelegend_text %>
+            </legend>
+            <input type="radio" name="changeOfJobStatus" id="employmentChangeJobChange" value="ChangeJobs">
+            <label class="radio-label" for="employmentChangeJobChange">
+                <span></span>
+                <%- content.employmentChangeJobChange_text %>
+            </label>
+            <input type="radio" name="changeOfJobStatus" id="employmentChangeStopWorking" value="StopWorking">
+            <label class="radio-label" for="employmentChangeStopWorking">
+                <span></span>
+                <%- content.employmentChangeStopWorking_text %>
+            </label>
+            <input type="radio" name="changeOfJobStatus" id="employmentChangeFewerHours" value="FewerHours">
+            <label class="radio-label" for="employmentChangeFewerHours">
+                <span></span>
+                <%- content.employmentChangeFewerHours_text %>
+            </label>
+            <input type="radio" name="changeOfJobStatus" id="employmentChangeNone" value="None">
+            <label class="radio-label" for="employmentChangeNone">
+                <span></span>
+                <%- content.employmentChangeNone_text %>
+            </label>
+        </fieldset>
+    </div>
+</div>
+</div>

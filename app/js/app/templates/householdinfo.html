@@ -1,0 +1,116 @@
+<div id="person">
+<h2><%= content.householdinfoHeading_text %></h2>
+
+<fieldset id="householdinfoNamefield" class="">
+    <legend>
+        <%- content.householdinfoName_text %>
+    </legend>
+    <div class="row-fluid">
+        <div class="control-group span3">
+            <div class="controls">
+                <label for="householdInfoYourFirstName"><%- content.householdInfoYourFirstName_text %></label>
+                <input id="householdInfoYourFirstName" name="firstName" type="text" value="First Name" maxlength="25"/>
+            </div>
+        </div>
+        <div class="control-group span3">
+            <div class="controls">
+        <label for="householdInfoYourMiddleName"><%- content.householdInfoYourMiddleName_text %></label>
+        <input id="householdInfoYourMiddleName" name="middleName" type="text" value="Middle Name (optional)" maxlength="25"/>
+        </div>
+        </div>
+        <div class="control-group span3">
+            <div class="controls">
+                <label for="householdInfoYourLastName"><%- content.householdInfoYourLastName_text %></label>
+                <input id="householdInfoYourLastName" name="lastName" type="text" value="Last Name" maxlength="25"/>
+            </div>
+        </div>
+
+        <div class="span3">
+            <label for="householdInfoYourSuffix"><%- content.householdInfoYourSuffix_text %></label>
+            <select id="householdInfoYourSuffix" name="suffix" class="select state" data-validate="stateSelectRequired">
+                <option value="" selected="selected">Select....</option>
+                <option value="Jr.">Jr.</option>
+                <option value="Sr.">Sr.</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>
+                <option value="V">V</option>
+            </select> 
+        </div>
+    </div>
+</fieldset>
+
+<fieldset id="householdInfoRelationshipfield" class="">
+    <legend><%- content.householdInfoRelationshiplegend_text %></legend>
+    <div class="row-fluid">
+        <div class="control-group span3">
+            <div class="controls">
+                <label for="householdInfoRelationship" class="HiddenText"><%- content.householdInfoRelationship_text %></label>
+                <select id="householdInfoRelationship" name="relationship" class="select state" data-validate="stateSelectRequired">
+                    <option value="" selected="selected">Select a Relationship</option>
+                    <option value="Self">Self</option>
+                    <option value="Parent">Parent</option>
+                    <option value="Stepparent">Stepparent</option>
+                    <option value="Spouse">Spouse</option>
+                    <option value="Son/Daughter">Son/Daughter</option>
+                    <option value="Stepson/Stepdaughter">Stepson/Stepdaughter</option>
+                    <option value="Domestic Partner">Domestic Partner</option>
+                    <option value="Child of Domestic Partner">Child of Domestic Partner</option>
+                </select>  
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset id="householdInfoLastnamefield" class="">
+    <legend><%- content.householdInfoDateOfBirthlegend_text %></legend>
+    <div class="row-fluid">    
+        <div class="control-group span3">
+            <div class="controls">
+                <label class="HiddenText"><%- content.householdInfoDateOfBirth_text %></label>
+                <input id="householdInfoLastName" name="dob" type="text" value="DD/MM/YYYY" maxlength="10"/> 
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset id="householdInfoSSNfield" class="">
+    <legend><%- content.householdInfoSSNlegend_text %></legend>
+    <div class="row-fluid">
+        <div class="control-group span3">
+            <div class="controls">
+
+                    <label class="HiddenText"><%- content.householdInfoSSN_text %></label>
+                    <input id="householdInfoSSN" name="ssn" type="text" value="555-55-5555" maxlength="11"/> 
+
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset id="householdInfoSexfield" class="">
+    <legend>
+        <%- content.householdInfoSexlegend_text %>
+    </legend>
+    <label for="state-select" class="HiddenText"><%- content.householdInfoSex_text %></label>
+    <select id="householdInfoSex" name="sex" class="select state" data-validate="stateSelectRequired">
+        <option value="Female" selected="selected">Female</option>
+        <option value="Male">Male</option>
+    </select>  
+</fieldset>
+
+<div class="control-group">
+    <div class="controls">
+        <fieldset id="householdInfoNeedCoveragefield" class="" data-error-style="inline">
+            <legend>
+                <%- content.householdInfoNeedCoveragelegend_text %>
+            </legend>
+            <input type="radio" name="needHealthCoverage" id="householdInfoNeedCoverageYes" value="Yes">
+            <label class="radio-label" for="householdInfoNeedCoverageYes">
+                <span></span><%- content.householdInfoNeedCoverageYes_text %></label>
+            <input type="radio" name="needHealthCoverage" id="householdInfoNeedCoverageNo" value="No">
+            <label class="radio-label" for="householdInfoNeedCoverageNo">
+                <span></span><%- content.householdInfoNeedCoverageNo_text %></label>
+        </fieldset>
+    </div>
+</div>
+</div>

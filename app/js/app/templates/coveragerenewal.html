@@ -1,0 +1,57 @@
+<div id="ezapp">
+    <h2><%- content.coverageRenewalHeading_text %></h2>
+    <p><%- content.coverageRenewallegend_text %></p>
+    
+    <div class="control-group">
+        <div class="controls">
+            <input type="radio" name="renewalAgreement" id="renewalAgreement-yes" value="agree"> 
+            <label class="radio-label" for="renewalAgreement-yes" >
+                <span></span>
+                <%- content.renewalAgreementYes_text %></label>
+            <input type="radio" name="renewalAgreement" id="renewalAgreement-no" value="disagree" data-toggle="expBox" data-target="#expBox1">
+            <label class="radio-label" for="renewalAgreement-no" >
+                <span></span>
+                <%- content.renewalAgreementNo_text %></label>
+            <div class="expandBox hidden" id="expBox1">    
+                <fieldset id="coveragerenewalperiodfield" class="" data-error-style="inline">
+                    <legend><%- content.coveragerenewalperiodlegend_text %></legend>
+
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="radio" name="coverageRenewalPeriod" id="coverageRenewalPeriod5" value="5">
+                            <label class="radio-label" for="coverageRenewalPeriod5">
+                                <span></span>
+                                <%- content.coverageRenewalPeriod5_text %>
+                            </label>
+                            <input type="radio" name="coverageRenewalPeriod" id="coverageRenewalPeriod4" value="4">
+                            <label class="radio-label" for="coverageRenewalPeriod4">
+                                <span></span>
+                                <%- content.coverageRenewalPeriod4_text %>
+                            </label>
+                            <input type="radio" name="coverageRenewalPeriod" id="coverageRenewalPeriod3" value="3">
+                            <label class="radio-label" for="coverageRenewalPeriod3">
+                                <span></span>
+                                <%- content.coverageRenewalPeriod3_text %>
+                            </label>
+                            <input type="radio" name="coverageRenewalPeriod" id="coverageRenewalPeriod2" value="2">
+                            <label class="radio-label" for="coverageRenewalPeriod2">
+                                <span></span>
+                                <%- content.coverageRenewalPeriod2_text %>
+                            </label>
+                            <input type="radio" name="coverageRenewalPeriod" id="coverageRenewalPeriod1" value="1">
+                            <label class="radio-label" for="coverageRenewalPeriod1">
+                                <span></span>
+                                <%- content.coverageRenewalPeriod1_text %>
+                            </label>
+                            <input type="radio" name="coverageRenewalPeriod" id="coverageRenewalPeriodNo" value="No">
+                            <label class="radio-label" for="coverageRenewalPeriodNo">
+                                <span></span>
+                                <%- content.coverageRenewalPeriodNo_text %>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div id="ezapp"> 
+    <fieldset id="needAssistancefield" class="" data-error-style="inline">
+        <legend><%- content.needAssistancelegend_text %></legend>
+                    
+        <div class="control-group">
+            <div class="controls"> 
+                <input type="radio" name="needAssistance" id="needAssistanceYes" value="Yes">
+                <label class="radio-label" for="needAssistanceYes"><span></span><%- content.needAssistanceYes_text %></label>
+                <input type="radio" name="needAssistance" id="needAssistanceNo" value="No">
+                <label class="radio-label" for="needAssistanceNo"><span></span><%- content.needAssistanceNo_text %></label>
+
+                <input type="radio" name="needAssistance" id="needAssistanceNotSure" value="NotSure" data-toggle="expBox" data-target="#expBox1">
+                <label class="radio-label" for="needAssistanceNotSure"><span></span><%- content.needAssistanceNotSure_text %></label>
+
+                <div class="expandBox hidden" id="expBox1">
+                    <div class="control-group">
+                        <div class="controls">
+                            <fieldset id="isIncomeBelowPovertyLevelfield" class="" data-error-style="inline">
+                                <legend><%- content.isIncomeBelowPovertyLevellegend_text %></legend>
+
+                                <input type="radio" name="isIncomeBelowPovertyLevel" id="isIncomeBelowPovertyLevelYes" value="Yes" data-toggle="expBox" data-target="#assistanceTxtYes">
+                                <label class="radio-label" for="isIncomeBelowPovertyLevelYes"><span></span><%- content.isIncomeBelowPovertyLevelYes_text %></label>
+                                <input type="radio" name="isIncomeBelowPovertyLevel" id="isIncomeBelowPovertyLevelNo" value="No" data-toggle="expBox" data-target="#assistanceTxtNo">
+                                <label class="radio-label" for="isIncomeBelowPovertyLevelNo"><span></span><%- content.isIncomeBelowPovertyLevelNo_text %></label>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p id="assistanceTxtYes" class="hidden"><%- content.assistance_text %></p>  
+
+        <p id="assistanceTxtNo" class="hidden"><%- content.assistance2_text %></p>    
+
+        <p class="infoBox" role="complimentary"><strong><%- content.assistanceNote_text %></strong><%- content.assistanceNote2_text %>        </p>     
+    </fieldset>
+</div>

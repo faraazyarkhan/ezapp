@@ -1,0 +1,212 @@
+/*---------------------------------------
+HEADER and FOOTER styles-
+-----------------------------------------*/
+
+#header 
+{
+	position: relative;
+	height: 56px;
+	border-bottom:5px solid #ccc;
+	background-color:#fff;
+	
+}
+
+#header .logo {
+	margin-top: 18px;
+}
+
+#header a {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 18px;
+	color: #fff;
+}
+
+#header .topnav {
+	display: inline-block;
+	color: #063346;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 18px;
+	height: 31px;
+	padding: 25px 30px 0;
+	text-decoration: none;
+}
+
+#header .topnav:hover, 
+#header .topnav:focus {
+	background: #eee;
+}
+
+#header .topnav.active, 
+#header .topnav.active:hover, 
+#header .topnav.active:focus {
+	color: #fff;
+	background: #046792;
+}
+
+#header .btn-lang {
+	position: absolute;
+	top: 20px;
+	background: #046792;
+	color: #fff;
+	padding: 0 6px;
+	font-size: 12px;
+}
+
+#header .btn-lang:hover,
+#header .btn-lang:focus {
+  background:#0377aa;
+  text-decoration:none;
+  }
+/*-------------------------------------------------
+Header End*/
+
+#footer {
+	font: .6em 'Open Sans',sans-serif;
+	-webkit-font-smoothing: antialiased;
+	padding: 20px 0;
+	background: url(../img/bg-footer.png) 0 0 repeat;
+	color: #333;
+}
+
+#footer .footer-bottom {
+	padding-top: 8px;
+	padding-bottom: 25px;
+	border-top: 1px solid #d3d3d3;
+}
+
+#footer .footer-bottom hr {
+	float: left;
+	margin: 0 0 20px 0;
+	border-top: 1px solid #d3d3d3;
+	border-bottom:none;
+	width: 100%;
+}
+
+#footer a,
+#footer a:hover,
+#footer a > div.span10:hover,
+#footer a.calendar:hover {
+  text-decoration:none;
+  color:#333;
+}
+
+#footer a:hover,
+#footer a:focus,
+#footer a > div.span10:hover,
+#footer a .calendar-text:hover {
+  color:#333;
+  text-decoration: underline;
+}
+
+#footer .footer-bottom a, 
+#footer .account-links {
+	text-transform: uppercase;
+	
+}
+
+#footer .footer-bottom a {
+	margin: 0 6px;
+}
+
+#footer .bottom-text {
+line-height: 14px;
+margin-left: 0;
+}
+
+.icon {
+  background:transparent url('../img/sprite.png') no-repeat 0 0;
+  display:block;
+  text-indent:-999em;
+  text-align:left;
+  width:10px;
+  height:10px;
+  border:1px solid rgba(255, 255, 255, 0);
+  }
+
+.icon.eagle {
+  width:50px;
+  height:70px;
+  background-position:-20px -266px;
+  margin-right:20px;
+  }
+.icon.whitehouse {
+  margin-left:20px!important;
+  width:60px;
+  height:42px;
+  background-position:-409px -268px;
+  }
+.icon.usagov {
+  width:100px;
+  height:40px;
+  background-position:-84px -270px;
+  }
+  
+.foot-link-container
+{
+	line-height:14px;
+}
+  
+.foot-hhs-container,
+.text-foot-disclaimer
+{
+	float:left;
+}
+  
+.foot-hhs-container
+{
+	margin-right:3px;
+}  
+  
+.text-foot-disclaimer
+{
+	width:275px;
+}
+  
+  
+.foot-right-icons
+{
+	float:right
+}
+
+.ie8 .foot-right-icons
+{
+	width:400px;
+	text-align:right;
+}
+
+.foot-right-icons img
+{
+	margin-left:20px;
+}
+
+ul.footer-nav
+{
+	list-style:none;
+	margin:2px;
+}
+
+ul.footer-nav-right
+{
+	float:right;
+}
+
+ul.footer-nav li
+{
+	float:left;
+	padding:0 1px;
+}
+
+ul.footer-nav li:first-child
+{
+	padding-left:0px;
+}
+
+ul.footer-nav li:before {
+content: " | ";
+}
+
+ul.footer-nav li:first-child:before {
+content: none;
+}

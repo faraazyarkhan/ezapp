@@ -1,0 +1,68 @@
+<div id="person">
+<h2><%- content.employmentHeading_text %><span><%=Person.getFullName() %></span></h2>
+
+<div class="control-group">
+    <div class="controls">
+        <fieldset id="employmentfield" class="" data-error-style="inline">
+            <legend><%- content.employmentHeading2_text %></legend>
+            <input type="checkbox" name="employmentStatusYes" id="employmentStatusYes" value="Employed" data-toggle="expBox" data-target="#expBox1">
+            <label class="checkbox-label" for="employmentStatusYes"><span></span><%- content.employment_text %></label>
+            <div class="expandBox hidden" id="expBox1">
+                <div id="employers"></div>                
+                <button id="addEmployer" class="btn btn-green">ADD ANOTHER EMPLOYER</button>
+            </div>
+
+            <input type="checkbox" name="employmentStatusNo" id="employmentStatusNo" value="NotEmployed">
+            <label class="checkbox-label" for="employmentStatusNo">
+                <span></span><%- content.employmentStatusNo_text %></label>
+            <input type="checkbox" name="employmentStatusSelf" id="employmentStatusSelf" value="SelfEmployed" data-toggle="expBox" data-target="#expBox2">
+            <label class="checkbox-label" for="employmentStatusSelf">
+                <span></span><%- content.employmentStatusSelf_text %></label>
+            <div class="expandBox hidden" id="expBox2">
+                <div class="control-group">
+                    <div class="controls">
+                        <label class="">
+                            <%- content.wageOrTips_text %></label>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <input id="wageOrTips2" name="selfEmployeeAmount" type="text" value="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <fieldset>
+                    <legend><%- content.often_text %></legend>
+                    <div class="control-group">  
+                        <div class="controls">  
+                            <input id="employeeHowOftenHourly" type="radio" name="selfEmployeeHowOften" value="Hourly" data-toggle="expBox" data-target="#expBoxHourlySelf"/> 
+                            <label for="employeeHowOftenHourly" class="radio-label"><span></span>Hourly</label>
+                            <input id="employeeHowOftenWeekly" type="radio" name="selfEmployeeHowOften" value="Weekly"  data-toggle="expBox" data-target="#expBoxHourlySelf" /> 
+                            <label for="employeeHowOftenWeekly" class="radio-label"><span></span>Weekly</label>
+                            <input id="employeeHowOften2Weeks" type="radio" name="selfEmployeeHowOften" value="2Weeks"  data-toggle="expBox" data-target="#expBoxHourlySelf" /> 
+                            <label for="employeeHowOften2Weeks" class="radio-label"><span></span>Every 2 weeks</label>
+                            <input id="employeeHowOftenTwiceAMonth" type="radio" name="selfEmployeeHowOften" value="TwiceAMonth"  data-toggle="expBox" data-target="#expBoxHourlySelf" /> 
+                            <label for="employeeHowOftenTwiceAMonth" class="radio-label"><span></span>Twice a month</label>
+                            <input id="employeeHowOftenMonthly" type="radio" name="selfEmployeeHowOften" value="Monthly"  data-toggle="expBox" data-target="#expBoxHourlySelf" /> 
+                            <label for="employeeHowOftenMonthly" class="radio-label"><span></span>Monthly</label>
+                            <input id="employeeHowOftenYearly" type="radio" name="selfEmployeeHowOften" value="Yearly"  data-toggle="expBox" data-target="#expBoxHourlySelf" /> 
+                            <label for="employeeHowOftenYearly" class="radio-label"><span></span>Yearly</label>
+                              <div class="control-group expandBox hidden" id="expBoxHourlySelf">
+                                <div class="controls">
+                                    <label class="">
+                                        <%- content.averageHoursPerWeek_text %></label>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <input id="averageHoursPerWeek2" name="selfEmployeeAverageHoursPerWeek" type="text"
+                                                value="" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                
+            </div>
+        </fieldset>
+    </div>
+</div>
+</div>

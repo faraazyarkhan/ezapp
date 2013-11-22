@@ -1,0 +1,16 @@
+﻿<% for(var i=0; i < persons.length; i++){ var prsn = persons[i].toJSON() %>
+<b><%- prsn.firstName %> :</b>
+<div id="personsummary">
+<%- content.person_firstName %> : <b><span><%- prsn.firstName %></span><br /></b>
+<%- content.person_lastName %> : <b><span><%- prsn.lastName %></span><br /></b>
+<%- content.person_middleName %> : <b><span><%- prsn.middleName %></span><br /></b>
+<%- content.person_suffix %> : <b><span><%- prsn.suffix %></span><br /></b>
+<%- content.person_sex %> : <b><span><%- prsn.sex %></span><br /></b>
+<%- content.person_relationship %> : <b><span><%- prsn.relationship %></span><br /></b>
+<%- content.person_dob %> : <b><span><%- prsn.dob %></span><br /></b>
+<%- content.person_ssn %> : <b><span><%- prsn.ssn %></span><br /></b>
+<%- content.person_sendInfoByEmail %> : <b><span><%- prsn.sendInfoByEmail %></span><br /></b>
+<%- content.person_preferredLanguage %> : <b><span><%- prsn.preferredLanguage %></span><br /></b>
+<%- content.person_relationship %> : <b><span><%- prsn.relationship %></span><br /></b>
+</div><br />
+<%} %>

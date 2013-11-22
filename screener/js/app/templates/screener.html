@@ -1,0 +1,297 @@
+<div id="screener">
+<div class="control-group">
+   <div class="controls"> 
+<fieldset id="audFS" class="" data-validate="audRequired">
+        <legend><%- content.coverage_text %></legend>
+                <input type="radio" name="coverage" id="aud-indv" value="only_you">
+                <label class="radio-label" for="aud-indv"><span></span><%- content.self_text %></label>
+                      
+                <input type="radio" name="coverage" id="aud-indvfam" value="you_family" data-toggle="expBox" data-target="#nooffam1">
+                <label class="radio-label" for="aud-indvfam"><span></span><%- content.selfandfamily_text %></label>
+     
+                <div class="expandBox hidden" id="nooffam1">
+                    <div class="control-group">
+                        <div class="controls"> 
+                            <label for="state-select1" data-error-style="inline"><%- content.noOfFamily_text %></label>
+                            <select id="state-select1" name="noOfFamily" class="select state" data-validate="stateSelectRequired">
+                                <option value="" selected="selected">Select an option</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="radio" name="coverage" id="aud-nonIndvfam" value="other_family" data-toggle="expBox" data-target="#nooffam2">
+                <label class="radio-label" for="aud-nonIndvfam"><span></span><%- content.otherfamily_text %></label>
+    
+                <div class="expandBox hidden" id="nooffam2">
+                    <div class="control-group">
+                        <div class="controls"> 
+                            <label for="state-select2" data-error-style="inline"><%- content.noOfFamily_text2 %></label>
+                            <select id="state-select2" name="noOfFamily" class="select state" data-validate="stateSelectRequired">
+                                <option value="" selected="selected">Select an option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> 
+    </fieldset>
+     </div>
+</div>
+<div class="control-group">
+    <div class="controls"> 
+        <fieldset id="needAssistancefield" class="" data-error-style="inline">
+            <legend><%- content.needAssistancelegend_text %></legend>
+            
+            <input type="radio" name="needAssistance" id="needAssistanceYes" value="Yes">
+            <label class="radio-label" for="needAssistanceYes"><span></span><%- content.needAssistanceYes_text %></label>
+            <input type="radio" name="needAssistance" id="needAssistanceNo" value="No">
+            <label class="radio-label" for="needAssistanceNo"><span></span><%- content.needAssistanceNo_text %></label>
+
+            <input type="radio" name="needAssistance" id="needAssistanceNotSure" value="NotSure" data-toggle="expBox" data-target="#finAst">
+            <label class="radio-label" for="needAssistanceNotSure"><span></span><%- content.needAssistanceNotSure_text %></label>
+
+            <div class="expandBox hidden" id="finAst">
+                <div class="control-group">
+                    <div class="controls">
+                        <fieldset id="isIncomeBelowPovertyLevelfield" class="" data-error-style="inline">
+                            <legend><%- content.isIncomeBelowPovertyLevellegend_text %></legend>
+
+                            <input type="radio" name="isIncomeBelowPovertyLevel" id="isIncomeBelowPovertyLevelYes" value="Yes" data-toggle="expBox" data-target="#assistanceTxtYes">
+                            <label class="radio-label" for="isIncomeBelowPovertyLevelYes"><span></span><%- content.isIncomeBelowPovertyLevelYes_text %></label>
+                            <input type="radio" name="isIncomeBelowPovertyLevel" id="isIncomeBelowPovertyLevelNo" value="No" data-toggle="expBox" data-target="#assistanceTxtNo">
+                            <label class="radio-label" for="isIncomeBelowPovertyLevelNo"><span></span><%- content.isIncomeBelowPovertyLevelNo_text %></label>
+
+
+                            <div id="assistanceTxtYes" class="infoBox hidden"><%- content.assistance_text %></div>  
+                            <div id="assistanceTxtNo" class="infoBox hidden"><%- content.assistance2_text %></div>    
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+<div class="control-group">
+    <div class="controls">
+        <fieldset id="needHealthCoveragefield" class="" data-error-style="inline">
+            <legend><%- content.needHealthCoveragelegend_text %></legend>
+             
+                    <input type="radio" name="needHealthCoverage" id="needHealthCoverageyes" value="Yes" data-toggle="expBox" data-target="#expBox1">
+                    <label class="radio-label" for="needHealthCoverageyes"><span></span><%- content.needHealthCoverageyes_text %></label>
+                    <div class="expandBox hidden" id="expBox1">
+                        <fieldset id="taxFilingStatusfield" class="" data-error-style="inline">
+                            <legend><%- content.taxFilingStatuslegend_text %></legend>
+                    
+                            <div class="control-group">
+                                <div class="controls">  
+                                    <input type="radio" name="taxFilingStatus" id="taxFilingStatusjoint" value="joint">
+                                    <label class="radio-label" for="taxFilingStatusjoint"><span></span><%- content.taxFilingStatusjoint_text %></label>
+                      
+                                    <input type="radio" name="taxFilingStatus" id="taxFilingStatusseparate" value="mfs">
+                                    <label class="radio-label" for="taxFilingStatusseparate"><span></span><%- content.taxFilingStatusseparate_text %></label>
+
+                                    <input type="radio" name="taxFilingStatus" id="taxFilingStatusnotmarried" value="unmarried">
+                                    <label class="radio-label" for="taxFilingStatusnotmarried"><span></span><%- content.taxFilingStatusnotmarried_text %></label>
+
+                                    <input type="radio" name="taxFilingStatus" id="taxFilingStatusnotFiling" value="not">
+                                    <label class="radio-label" for="taxFilingStatusnotFiling"><span></span><%- content.taxFilingStatusNot_text %></label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset id="taxFilingDependentfield" class="" data-error-style="inline">
+                            <legend><%- content.taxFilingDependentlegend_text %></legend>
+
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input type="radio" name="taxFilingDependentQuestion" id="taxFilingDependentQuestionYes" value="yes" />
+                                    <label class="radio-label" for="taxFilingDependentQuestionYes"><span></span><%- content.taxFilingDependentYes_text %></label>
+
+                                    <input type="radio" name="taxFilingDependentQuestion" id="taxFilingDependentQuestionNo" value="no" />
+                                    <label class="radio-label" for="taxFilingDependentQuestionNo"><span></span><%- content.taxFilingDependentNo_text %></label>
+
+                                    <input type="radio" name="taxFilingDependentQuestion" id="taxFilingDependentQuestionNoDependents" value="no_deps" />
+                                    <label class="radio-label" for="taxFilingDependentQuestionNoDependents"><span></span><%- content.taxFilingDependentNoDependents_text %></label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset id="taxFilingDependentConditionfield" class="" data-error-style="inline" >
+                            <legend><%- content.taxFilingDependentConditionlegend_text %></legend>
+
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input type="radio" name="taxFilingDependentCondition" id="taxFilingDependentConditionYes" value="Yes" />
+                                    <label class="radio-label" for="taxFilingDependentConditionYes"><span></span><%- content.taxFilingDependentConditionYes_text %></label>
+
+                                    <input type="radio" name="taxFilingDependentCondition" id="taxFilingDependentConditionNo" value="No" />
+                                    <label class="radio-label" for="taxFilingDependentConditionNo"><span></span><%- content.taxFilingDependentConditionNo_text %></label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset id="taxFilingNoDependentfield" class="" data-error-style="inline" >
+                            <legend><%- content.taxFilingNoDependentfieldlegend_text %></legend>
+
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input type="radio" name="taxFilingNoDependent" id="taxFilingNoDependentYes" value="Yes" />
+                                    <label class="radio-label" for="taxFilingNoDependentYes"><span></span><%- content.taxFilingNoDependentfieldYes_text %></label>
+
+                                    <input type="radio" name="taxFilingNoDependent" id="taxFilingNoDependentNo" value="No" />
+                                    <label class="radio-label" for="taxFilingNoDependentNo"><span></span><%- content.taxFilingNoDependentfieldNo_text %></label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                      
+                    <input type="radio" name="needHealthCoverage" id="needHealthCoverageno" value="No">
+                    <label class="radio-label" for="needHealthCoverageno"><span></span><%- content.needHealthCoverageno_text %></label>
+        </fieldset>
+    </div>
+</div>
+<div class="control-group">
+    <div class="controls">
+        <fieldset id="isUSCitizenfield" class="" data-error-style="inline">
+            <legend><%- content.isUSCitizenlegend_text %></legend>
+                      
+            <input type="radio" name="isUSCitizen" id="isUSCitizenYes" value="Yes" data-toggle="expBox" data-target="#expBox2">
+            <label class="radio-label" for="isUSCitizenYes"><span></span><%- content.isUSCitizenYes_text %></label>
+
+            <div class="expandBox hidden" id="expBox2">
+                <div class="control-group">
+                    <div class="controls">
+                        <fieldset id="citizenQuestion" class="" data-error-style="inline">
+                            <legend><%- content.citizenStatuslegend_text %></legend>
+                            <input type="radio" name="citizenQuestion" id="citizenQuestionYes" value="Yes">
+                            <label class="radio-label" for="citizenQuestionYes"><span></span><%- content.citizenStatusYes_text %></label>
+                      
+                            <input type="radio" name="citizenQuestion" id="citizenQuestionNo" value="No">
+                            <label class="radio-label" for="citizenQuestionNo"><span></span><%- content.citizenStatusNo_text %></label>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+                      
+            <input type="radio" name="isUSCitizen" id="isUSCitizenNo" value="No">
+            <label class="radio-label" for="isUSCitizenNo"><span></span><%- content.isUSCitizenNo_text %></label>
+        </fieldset>
+    </div>
+</div>
+<div class="control-group">
+        <div class="controls">
+<fieldset id="employmentStatusfield" class="" data-error-style="inline">
+    <legend><%- content.employmentStatuslegend_text %></legend>
+                      
+    <input type="radio" name="employmentStatus" id="employmentStatusYes" value="Yes">
+    <label class="radio-label" for="employmentStatusYes"><span></span><%- content.employmentStatusYes_text %></label>
+                      
+    <input type="radio" name="employmentStatus" id="employmentStatusNo" value="No">
+    <label class="radio-label" for="employmentStatusNo"><span></span><%- content.employmentStatusNo_text %></label>
+</fieldset>
+</div></div>
+<div class="control-group">
+        <div class="controls">
+<fieldset id="pregnantfield" class="" data-error-style="inline">
+    <legend><%- content.pregnantlegend_text %></legend>
+                      
+    <input type="radio" name="pregnant" id="pregnantYes" value="Yes">
+    <label class="radio-label" for="pregnantYes"><span></span><%- content.pregnantYes_text %></label>
+                      
+    <input type="radio" name="pregnant" id="pregnantNo" value="No">
+    <label class="radio-label" for="pregnantNo"><span></span><%- content.pregnantNo_text %></label>
+</fieldset>
+</div></div>
+<div class="control-group">
+        <div class="controls">
+<fieldset id="isFulltimeStudentfield" class="" data-error-style="inline">
+    <legend><%- content.isFulltimeStudentlegend_text %></legend>
+                      
+    <input type="radio" name="isFulltimeStudent" id="isFulltimeStudentYes" value="Yes">
+    <label class="radio-label" for="isFulltimeStudentYes"><span></span><%- content.isFulltimeStudentYes_text %></label>
+                      
+    <input type="radio" name="isFulltimeStudent" id="isFulltimeStudentNo" value="No">
+    <label class="radio-label" for="isFulltimeStudentNo"><span></span><%- content.isFulltimeStudentNo_text %></label>
+</fieldset>
+</div></div>
+<div class="control-group">
+        <div class="controls">
+<fieldset id="isCoveredbyTribalfield" class="" data-error-style="inline">
+    <legend><%- content.isCoveredbyTriballegend_text %></legend>
+                      
+    <input type="radio" name="isCoveredbyTribal" id="isCoveredbyTribalYes" value="Yes">
+    <label class="radio-label" for="isCoveredbyTribalYes"><span></span><%- content.isCoveredbyTribalYes_text %></label>
+                      
+    <input type="radio" name="isCoveredbyTribal" id="isCoveredbyTribalNo" value="No">
+    <label class="radio-label" for="isCoveredbyTribalNo"><span></span><%- content.isCoveredbyTribalNo_text %></label>
+</fieldset>
+</div></div>
+<div class="control-group">
+        <div class="controls">
+<fieldset id="wasInFosterCarefield" class="" data-error-style="inline">
+    <legend><%- content.wasInFosterCarefieldlegend_text %></legend>
+                      
+    <input type="radio" name="wasInFosterCare" id="wasInFosterCareYes" value="Yes">
+    <label class="radio-label" for="wasInFosterCareYes"><span></span><%- content.wasInFosterCareYes_text %></label>
+                      
+    <input type="radio" name="wasInFosterCare" id="wasInFosterCareNo" value="No">
+    <label class="radio-label" for="wasInFosterCareNo"><span></span><%- content.wasInFosterCareNo_text %></label>
+</fieldset>
+</div></div>
+<div class="control-group">
+    <div class="controls">
+        <fieldset id="isIncarceratedfield" class="" data-error-style="inline">
+            <legend><%- content.isIncarceratedlegend_text %></legend>
+
+            <input type="radio" name="isIncarcerated" id="isIncarceratedYes" value="Yes">
+            <label class="radio-label" for="isIncarceratedYes"><span></span><%- content.isIncarceratedYes_text %></label>
+                      
+            <input type="radio" name="isIncarcerated" id="isIncarceratedNo" value="No">
+            <label class="radio-label" for="isIncarceratedNo"><span></span><%- content.isIncarceratedNo_text %></label>
+        </fieldset>
+    </div>
+</div>
+<div class="control-group">
+    <div class="controls">
+        <fieldset id="outsideStatefield" class="" data-error-style="inline">
+            <legend><%- content.outsideStatelegend_text %></legend>
+
+            <input type="radio" name="outsideState" id="outsideStateYes" value="Yes">
+            <label class="radio-label" for="outsideStateYes"><span></span><%- content.outsideStateYes_text %></label>
+                      
+            <input type="radio" name="outsideState" id="outsideStateNo" value="No">
+            <label class="radio-label" for="outsideStateNo"><span></span><%- content.outsideStateNo_text %></label>
+        </fieldset>
+    </div>
+</div>
+<div class="control-group">
+    <div class="controls">
+        <fieldset id="noFixedAddressfield" class="" data-error-style="inline">
+            <legend><%- content.noFixedAddresslegend_text %></legend>
+
+            <input type="radio" name="noFixedAddress" id="noFixedAddressYes" value="Yes">
+            <label class="radio-label" for="noFixedAddressYes"><span></span><%- content.noFixedAddressYes_text %></label>
+                      
+            <input type="radio" name="noFixedAddress" id="noFixedAddressNo" value="No">
+            <label class="radio-label" for="noFixedAddressNo"><span></span><%- content.noFixedAddressNo_text %></label>
+        </fieldset>
+    </div>
+</div>
+   <p class="infoBox" role="complimentary"><strong><%- content.assistanceNote_text %></strong><%- content.assistanceNote2_text %></p>  
+</div>
+

@@ -1,0 +1,16 @@
+
+<input type="checkbox" name="incarcerationPersonName" id="incarcerationPersonName<%-name %>" data-toggle="expBox" data-target="#expBox2" /> 
+<label for="incarcerationPersonName<%-name %>"><span></span><%- name %></label>
+<div class="expandBox hidden" id="expBox2">
+    <fieldset id="incarcerationInfofield" class="" data-error-style="inline">
+        <legend>
+            <%- content.incarcerationInfoPendingChargeslegend_text %>
+        </legend>
+        <input type="radio" name="incarcerationPendingCharges" id="incarcerationInfoPendingChargesYes" value="Yes">
+        <label class="radio-label" for="incarcerationInfoPendingChargesYes">
+            <span></span> <%- content.incarcerationInfoPendingChargesYes_text %> </label>
+        <input type="radio" name="incarcerationPendingCharges" id="incarcerationInfoPendingChargesNo" value="No">
+        <label class="radio-label" for="incarcerationInfoPendingChargesNo">
+            <span></span><%- content.incarcerationInfoPendingChargesNo_text %> </label>
+    </fieldset>            
+</div>

@@ -1,0 +1,25 @@
+<div id="ezapp">
+    <div class="control-group">
+        <div class="controls">
+            <fieldset id="appFS" class="" data-error-style="inline">
+                <legend>
+                    <%- content.aiaplegend_text %></legend>
+                <input type="radio" name="aian" id="aiap-yes" value="yes" data-toggle="expBox" data-target="#expBox1">
+                <label class="radio-label" for="aiap-yes" >
+                    <span></span>
+                    <%- content.aiapTribeYes_text %></label>
+                <div class="expandBox hidden" id="expBox1">    
+                    <label for="trib-select" data-error-style="inline" class="HiddenText"><%- content.selectTribe_text %></label>
+                    <select id="tribe-select" name="tribe" data-validate="stateSelectRequired">
+                        <option value="Select a tribe" selected="selected"><%- content.selectTribe_text %></option>
+                    </select>    
+                </div>
+                <input type="radio" name="aian" id="aiap-no" value="no">
+                <label class="radio-label" for="aiap-no">
+                    <span></span>
+                    <%- content.aiapTribeNo_text %></label>
+            </fieldset>
+        </div>
+    </div>
+</div>
+

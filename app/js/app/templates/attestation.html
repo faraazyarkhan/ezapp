@@ -1,0 +1,19 @@
+<div id="ezapp">
+<textarea id="attestation-area">
+    <%- content.attestationHeading_text %>
+    
+</textarea>
+<div class="control-group">
+    <div class="controls">
+        <fieldset id="attestationfield" class="" data-error-style="inline">
+            <legend>
+                <%- content.attestationlegend_text %>
+            </legend>
+            <input type="radio" name="attestation" id="attestationYes" value="Yes">
+            <label class="radio-label" for="attestationYes"><span></span><%- content.attestationYes_text %></label>
+            <input type="radio" name="attestation" id="attestationNo" value="No">
+            <label class="radio-label" for="attestationNo"><span></span><%- content.attestationNo_text %></label>
+</fieldset>
+    </div>
+</div>
+</div>

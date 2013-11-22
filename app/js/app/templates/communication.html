@@ -1,0 +1,36 @@
+<div id='poc'>
+    <fieldset id="needInfoByEmailfield" class="">
+        <legend>
+            <%- content.needInfoByEmaillegend_text %>
+        </legend>
+        <div class="control-group">
+            <div class="controls">
+                <input type="radio" name="needInfoByEmail" id="needInfoByEmailYes" value="Yes" data-toggle="expBox" data-target="#expBox1"/>
+                <label class="radio-label" for="needInfoByEmailYes"><span></span><%- content.needInfoByEmailYes_text %></label>
+
+                <div class="expandBox hidden" id="expBox1">
+                    <div class="row-fluid">
+                        <div class="control-group span6">
+                            <div class="controls">
+                                <label class=""><%- content.emailAddress_text %></label>
+                                <input id="emailAddress" name="emailAddress" type="text" value=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="radio" name="needInfoByEmail" id="needInfoByEmailNo" value="No" />
+                <label class="radio-label" for="needInfoByEmailNo"><span></span><%- content.needInfoByEmailNo_text %></label>
+            </div>
+        </div>
+        <label for="state-select" class="spacer-top25"><%- content.preferredLanguagelegend_text %></label>
+        <select id="Select2" name="preferredLanguage">
+            <option value="English" selected="selected">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Vietnamese">Vietnamese</option>
+            <option value="Tagalog">Tagalog</option>
+            <option value="Russian">Russian</option>
+            <option value="Portuguese">Portuguese</option>
+            <option value="Other">Other</option>
+        </select>
+    </fieldset>
+</div>

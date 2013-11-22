@@ -1,0 +1,13 @@
+{ 
+    "needAssistancelegend_text" : "Do you want to find out if you/your family can get help paying for health coverage?",
+    "needAssistanceYes_text" : "Yes",
+    "needAssistanceNo_text" : "No",
+    "needAssistanceNotSure_text" : "Not Sure",
+	"isIncomeBelowPovertyLevellegend_text" : "Based on your best guess, do you expect your total household income to be less than [Federal Poverty Level Value]?",
+	"isIncomeBelowPovertyLevelYes_text" : "Yes",
+	"isIncomeBelowPovertyLevelNo_text" : "No",
+	"assistance_text" : "Read this important note to applicant",
+	"assistance2_text" : ": If you need to return to this question at a later time and change your answer, you'll need to restart the application from the beginning.",
+	"assistanceNote_text" : "Read this to the applicant",
+	"assistanceNote2_text" : ":We encourage you to apply to see what help you can get paying for health coverage. Based on what you told us, you may be eligible to get help paying for health coverage through the Marketplace. We encourage you to apply for this help."
+}

@@ -1,0 +1,30 @@
+<div id='person'>
+    <h2><%- content.assistanceHeading_text %><span><%=Person.getFullName() %></span></h2>
+
+    <fieldset id="existingMedicalConditionfield" class="" data-error-style="inline">
+        <legend><%- content.existingMedicalConditionlegend_text %></legend>
+
+        <input type="radio" name="existingMedicalCondition" id="existingMedicalConditionYes" value="Yes">
+        <label class="radio-label" for="existingMedicalConditionYes"><span></span><%- content.existingMedicalConditionYes_text %></label> 
+        <input type="radio" name="existingMedicalCondition" id="existingMedicalConditionNo" value="No">
+        <label class="radio-label" for="existingMedicalConditionNo"><span></span><%- content.existingMedicalConditionNo_text %> </label> 
+    </fieldset>
+
+    <fieldset id="needsAssistanceField" class="spacer-top25" data-error-style="inline">
+        <legend><%- content.needsPhysicalAssistancelegend_text %></legend>
+
+        <input type="radio" name="needsPhysicalAssistance" id="needsPhysicalAssistanceYes" value="Yes">
+        <label class="radio-label" for="needsPhysicalAssistanceYes"><span></span><%- content.needsPhysicalAssistanceYes_text %></label> 
+        <input type="radio" name="needsPhysicalAssistance" id="needsPhysicalAssistanceNo" value="No">
+        <label class="radio-label" for="needsPhysicalAssistanceNo"><span></span><%- content.needsPhysicalAssistanceNo_text %></label> 
+    </fieldset>
+
+    <fieldset id="needAssistanceMedicalField" class="spacer-top25" data-error-style="inline">
+        <legend><%- content.wantMedicalBillingAssitancelegend_text %></legend>
+
+        <input type="radio" name="wantMedicalBillingAssitance" id="wantMedicalBillingAssitanceYes" value="Yes">
+        <label class="radio-label" for="wantMedicalBillingAssitanceYes"><span></span><%- content.wantMedicalBillingAssitanceYes_text %></label> 
+        <input type="radio" name="wantMedicalBillingAssitance" id="wantMedicalBillingAssitanceNo" value="No">
+        <label class="radio-label" for="wantMedicalBillingAssitanceNo"><span></span><%- content.wantMedicalBillingAssitanceNo_text %></label> 
+    </fieldset>
+</div>

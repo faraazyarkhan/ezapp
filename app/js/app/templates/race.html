@@ -1,0 +1,80 @@
+<div id="person">
+<h2><%- content.raceHeading_text %><span><%=Person.getFullName() %></span></h2>
+
+<fieldset>
+    <legend><%- content.racelegend_text %><small> <%- content.racelegend2_text %></small></legend>
+    
+    <div class="row-fluid">    
+        <div class="span4">
+            <input type="checkbox" name="cuban" id="hispanicRaceTypeCuban" value="Cuban" /> 
+            <label for="hispanicRaceTypeCuban" class="checkbox-label"><span></span><%- content.hispanicRaceTypeCuban_text %></label>
+            <input type="checkbox" name="puertoRican" id="hispanicRaceTypePuertoRican" value="Puerto Rican" /> 
+            <label for="hispanicRaceTypePuertoRican" class="checkbox-label"><span></span><%- content.hispanicRaceTypePuertoRican_text %></label>
+        </div>
+        <div class="span6">
+            <input type="checkbox" name="mexican" id="hispanicRaceTypeMexican" value="Mexican" /> 
+            <label for="hispanicRaceTypeMexican" class="checkbox-label"><span></span><%- content.hispanicRaceTypeMexican_text %></label>
+            <div class="row-fluid">
+                <div class="span3">
+                    <input type="checkbox" name="other" id="hispanicRaceTypeOther" value="Other" /> 
+                    <label for="hispanicRaceTypeOther" class="checkbox-label"><span></span><%- content.hispanicRaceTypeOther_text %></label>
+                </div>
+                <div class="control-group span6" >
+                    <div class="controls">
+                        <input id="otherEthnicity" name="hispanicOtherTxtBox" type="text" value="" maxlength="25"/> 
+                    </div>
+                </div>
+               </div>
+        </div>
+    </div>
+</fieldset>
+<fieldset>
+    <legend><%- content.nonHispaniceRaceTypelegend_text %><small> <%- content.nonHispaniceRaceTypelegend2_text %></small></legend>
+    
+    <div class="row-fluid">    
+        <div class="span4">
+            <input type="checkbox" name="alaskanIndian" id="nonHispaniceRaceTypeAlaskanIndian" value="Alaskan Indian" /> 
+            <label for="nonHispaniceRaceTypeAlaskanIndian" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeAlaskanIndian_text %></label>
+            <input type="checkbox" name="alaskanNative" id="nonHispaniceRaceTypeAlaskanNative" value="American Indian or Alaskan Native" /> 
+            <label for="nonHispaniceRaceTypeAlaskanNative" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeAlaskanNative_text %></label>
+            <input type="checkbox" name="africanAmerican" id="nonHispaniceRaceTypeAfricanAmerican" value="Black or African American" /> 
+            <label for="nonHispaniceRaceTypeAfricanAmerican" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeAfricanAmerican_text %></label>
+            <input type="checkbox" name="chinese" id="nonHispaniceRaceTypeChinese" value="Chinese" /> 
+            <label for="nonHispaniceRaceTypeChinese" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeChinese_text %></label>
+            <input type="checkbox" name="filipino" id="nonHispaniceRaceTypeFilipino" value="Filipino" /> 
+            <label for="nonHispaniceRaceTypeFilipino" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeFilipino_text %></label>
+            <input type="checkbox" name="guamanian" id="nonHispaniceRaceTypeChamorro" value="Guamanian or Chamorro" /> 
+            <label for="nonHispaniceRaceTypeChamorro" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeChamorro_text %></label>
+            <input type="checkbox" name="japanese" id="nonHispaniceRaceTypeJapanese" value="Japanese" /> 
+            <label for="nonHispaniceRaceTypeJapanese" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeJapanese_text %></label>
+        </div>
+        <div class="span6">
+            <input type="checkbox" name="korean" id="nonHispaniceRaceTypeKorean" value="Korean" /> 
+            <label for="nonHispaniceRaceTypeKorean" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeKorean_text %></label>
+            <input type="checkbox" name="hawaiian" id="nonHispaniceRaceTypeHawaiian" value="Native Hawaiian" /> 
+            <label for="nonHispaniceRaceTypeHawaiian" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeHawaiian_text %></label>
+            <input type="checkbox" name="asian" id="nonHispaniceRaceTypeOtherAsian" value="Other Asian" /> 
+            <label for="nonHispaniceRaceTypeOtherAsian" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeOtherAsian_text %></label>
+            <input type="checkbox" name="pacificIslander" id="nonHispaniceRaceTypeOtherPacificIslander" value="Other Pacific Islander" /> 
+            <label for="nonHispaniceRaceTypeOtherPacificIslander" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypePacificIslander_text %></label>
+            <input type="checkbox" name="samoan" id="nonHispaniceRaceTypeSamoan" value="Samoan" /> 
+            <label for="nonHispaniceRaceTypeSamoan" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeSamoan_text %></label>
+            <input type="checkbox" name="vietnamese" id="nonHispaniceRaceTypeVietnamese" value="Vietnamese" /> 
+            <label for="nonHispaniceRaceTypeVietnamese" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeVietnamese_text %></label>
+            <input type="checkbox" name="white" id="nonHispaniceRaceTypeWhite" value="White" /> 
+            <label for="nonHispaniceRaceTypeWhite" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeWhite_text %></label>
+             <div class="row-fluid">
+                <div class="span3">
+                    <input type="checkbox" name="otherRace" id="nonHispaniceRaceTypeOther" value="Other" /> 
+                    <label for="nonHispaniceRaceTypeOther" class="checkbox-label"><span></span><%- content.nonHispaniceRaceTypeOther_text %></label>
+                </div>
+                <div class="control-group span6">
+                    <div class="controls">
+                        <input id="otherRaceText" name="nonHispaniceOtherTxtBox" type="text" value="" maxlength="25"/>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</fieldset>
+</div>

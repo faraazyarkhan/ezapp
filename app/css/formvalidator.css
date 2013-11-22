@@ -1,0 +1,121 @@
+/*Error handling Styles*/
+.feedbackMsg {
+	display:none;
+}
+.feedbackMsg.error, .feedbackMsg.success, .feedbackMsg.waiting {
+	display: block;
+}
+
+#primary-feedbackMsg,
+#spouse-feedbackMsg,
+#child_0-feedbackMsg,
+#child_1-feedbackMsg,
+#child_2-feedbackMsg,
+#child_3-feedbackMsg,
+#child_4-feedbackMsg,
+#effective-feedbackMsg {
+	position:absolute;
+	margin-top:70px;
+}
+
+#employeeNum-feedbackMsg
+{
+    position: absolute;  
+}
+
+h2.errorSummaryHeading {
+	margin-bottom:10px;
+	font-size: 100%;
+}
+ul.errorSummaryList {
+	background-color: #FDE9EA;
+	border-radius:4px;
+	margin: 0 0 30px;
+	padding: 20px 20px 10px;
+}
+.errorSummaryList li {
+	list-style: disc inside none;
+}
+.errorSummaryList .errorSummaryLabel {
+	font-weight: bold;
+}
+.feedbackMsg .iconCustom-exclamation-sign {
+	font-size: 16px;
+	vertical-align: middle;
+	margin-right:7px;
+}
+.errorSummaryHeading .iconCustom-exclamation-sign {
+	font-size: 28px;
+	vertical-align: middle;
+	margin-right:15px;
+}
+input.errorField, select.errorField {
+	border-color: #990000;
+}
+
+/************************ ERROR AND WARNING STYLES ************************/
+.errorSummaryHeading {
+	background-color: #990000;
+	border-color: #990000;
+	color: #fff;
+	padding: 15px;
+	border-radius:4px;
+}
+.error {
+	font-weight: 700;
+	line-height:1em;
+}
+.warning, .success {
+	font-size: .75em;
+	font-weight: 700;
+	line-height:1em;
+}
+.error i, .warning i, .success i {
+	font-size: 16px;
+	margin-right:7px;
+}
+.error, .errorSummaryItem a, .error .icon-circle_exclamation_mark {
+	color: #990000;
+}
+.warning {
+	color: #d44116;
+}
+.smallText.warning, .smallText.error{
+	font-size: .875em;
+	font-weight: normal;
+}
+.normal-text.warning, .normal-text.success, .normal-text.danger, .normal-text.error {
+	font-size: 1em;
+}
+.dental-error {
+	color: #990000;
+}
+
+[class^="iconCustom-"],
+[class*=" iconCustom-"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+
+  /* sprites.less reset */
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+}
+
+[class^="iconCustom-"]:before,
+[class*=" iconCustom-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+
+.iconCustom-exclamation-sign:before     { content: "\f06a"; }

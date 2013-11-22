@@ -1,0 +1,27 @@
+﻿{
+    "InsuranceApplicantPersons": [<%_.each(modelJSON.persons, function(person,i){%>
+        {
+            "PersonRequestPosition": "<%=i+1 %>",
+            "PersonBirthDate": "<%= new Date(person.dob).toISOString().substring(0,10) %>",
+            "PersonSSNIdentification": "<%=(person.ssn).replace(/-/gm,"") %>",
+            "PersonGivenName": "<%=person.firstName %>",
+            "PersonMiddleName": "<%=person.middleName %>",
+            "PersonSurName": "<%=person.lastName %>",
+            "PersonUSCitizenIndicator": true,
+            "TaxFilerCategoryCode": <%if(i===0){%>"PRIMARY"<%}else{%>"DEPENDENT"<%}%>
+        }<%if(i!=modelJSON.persons.length-1){%>,<%}%> <%});%>
+    ],
+    "AggregatedHouseholdIncomeAmount": "<%=model.getAnnualHouseHoldIncome() %>",
+    "APTCInformation": {
+        "AdjustedHouseholdIncome": "<%=model.getAdjustedAnnualHouseholdIncome() %>",
+        "APTCStateCode": "<%=modelJSON.coverageState %>",
+        "SLCSPPremium": "0"
+    },
+    "RequestingFinancialAssistanceIndicator": false,
+    "HouseholdSizeQuantity": "<%=modelJSON.noOfFamily %>",
+    "AddressInformation": {
+        "zipcode": "<%=modelJSON.poc.zip %>",
+        "state": "<%=modelJSON.poc.state %>",
+        "county": "<%=modelJSON.poc.county %>"
+    }
+}

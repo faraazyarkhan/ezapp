@@ -1,0 +1,69 @@
+#main { padding: 0 }
+#main h1 { padding: 15px 10px 15px 0 }
+dl { margin-top: 0 }
+dt { color: #a00; font-weight: bold }
+#api dt, #debugging dt { font-size: 120%; margin: 5px 0 }
+dd { margin: 0 0 20px 0; color: #555 }
+dl.options { margin: 10px 25px }
+code.inline { background-color: #ffc }
+.footer { padding-top: 20px; margin-top: 30px; border-top: 1px solid #ddd; color: #666 }
+
+.anchors { background-color: #eee; border-bottom: 1px solid #ccc; zoom:1 }
+.anchors, .sampleAnchors { list-style: none; margin: 0; padding: 0 0 1px; }
+.anchors:after, .sampleAnchors:after { display: block; clear: both; content: " "; }
+.anchors li { float: left; margin: 0 1px 0 0; }
+.anchors a, .sampleAnchors a {
+    display: block; position: relative; top: 1px; border: 1px solid #ccc;
+    border-bottom: 0; z-index: 2; padding: 2px 9px 1px; color: #444; text-decoration: none;
+}
+.anchors .on a { padding-bottom: 2px; font-weight: bold; }
+.anchors a:focus, .anchors a:active, .sampleAnchors a:focus, .sampleAnchors a:active { outline: none; }
+.anchors .on a, .anchors a:hover, .anchors a:focus, .anchors a:active { background: #fff; }
+.anchors .on a:link, .anchors .on a:visited {  cursor: text; }
+.anchors a:hover, .anchors a:focus, .anchors a:active { cursor: pointer; }
+.on { display: block; }
+.anchors a h2 { padding:0; margin:2px }
+.tabs-selected a { background-color: #fff; color: #000; font-weight: bold; border-bottom: 1px solid #fff; margin-bottom: -1px; overflow: visible }
+
+.tabContent { padding: 10px 25px; clear: left; background-color: #fff; margin: 0 0 30px 0; zoom:1}
+.sampleTabContent { padding: 10px 25px; clear: left; background-color: #fff; margin: 0 0 50px 0; border: 1px solid #ddd; zoom:1}
+.tabs-hide { display: none; background-color: #fff }
+
+.sampleAnchors a { display: block; }
+.sampleAnchors li { float: left; margin: 0 1px 0 0; }
+.sample-tab-selected a { background-color: #fff; color: #000; font-weight: bold; border-bottom: 1px solid #fff; margin-bottom: -1px; overflow: visible}
+
+
+div.growlUI { background: url(check48.png) no-repeat 10px 10px }
+div.growlUI h1, div.growlUI h2 { color: white; padding: 5px 5px 5px 75px; text-align: left }
+div.growlUI h2 { font-size: medium }
+
+
+/*--------block design----*/
+
+.blockPage 
+{
+	padding:10px;
+	margin:	0;
+	width:440px;
+	height:230px;
+	top:30%;
+	left:35%;
+	text-align:	center;
+	color:#fff;
+	border:none;
+	background-color:#000;
+	cursor:	wait;
+	opacity:0.7;
+	filter:Alpha(opacity=70);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size:1.1em;
+}
+
+.block-title
+{
+	font-size:2.05em;
+	margin-top:30px;
+}

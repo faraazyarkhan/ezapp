@@ -1,0 +1,10 @@
+{ 
+    "coverage_text" : "Who are you applying for health coverage for?",
+    "self_text" : "Only you",
+    "selfandfamily_text" : "You and other family members",
+	"otherfamily_text": "Other family members, not you",
+	"noOfFamily_text": "How many people were on your 2012 federal tax return? (Include yourself.)",
+	"noOfFamily_text2": "How many people were on your 2012 federal tax return? (Not including yourself)",
+	"assistanceNote_text" : "Read this important note to applicant",
+	"assistanceNote2_text" : ": If you need to come back and change your answer to this question, you'll need to start the application all over again."
+}

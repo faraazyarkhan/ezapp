@@ -1,0 +1,6 @@
+{ 
+    "attestationlegend_text" : "Do you agree with this statement?",
+    "attestationYes_text" : "Agree",
+    "attestationNo_text" : "Disagree",
+	"attestationHeading_text" : "I know I'll be asked to cooperate with the agency that collects medical support from an absent parent. If i think that cooperating to collect medical support will harm me or my children, I can tell the agency and I may not have to cooperate. Do you agree or disagree? I'm signing this application under penalty of perjury, which means I've provided true answers to all of the questions to the best of my knowledge. I know that I may be subject to penalties under federal law if I intentionally provide false or untrue information. Do you agree or disagree?"
+}

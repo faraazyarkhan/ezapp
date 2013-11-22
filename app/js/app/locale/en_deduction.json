@@ -1,0 +1,19 @@
+{ 
+    "deductionHeading_text" : "Tell us about ",
+    "deductionlegend_text" : "Does this person pay for any of the deduction below? (If yes, select the deduction below. If not, select \"None of the these.\")",
+    "deductionNote_text" : "NOTE",
+	"deductionNote2_text" : ": If this person pays for certain things that can be deducted on an income tax return, telling us about them could make the cost of health insurance a little lower.",
+    "otherIncomeWages_text" : "AMOUNT (BEFORE TAXES)",
+	"otherIncomeWagesPeriod_text" : "HOW OFTEN?",
+	"alimonyPayed_text" : "Alimony paid",
+	"studentLoanIntrest_text" : "Student loan interest",
+	"otherDeductions_text" : "Other deductions",
+	"otherIncomeType_text" : "Type",
+    "noneOfThese_text" : "None of these",
+	"otherIncomeWagesPeriodHourly_text" : "Hourly",
+	"otherIncomeWagesPeriodweekly_text" : "Weekly",
+	"otherIncomeWagesPeriod2weeks_text" : "Every 2 weeks",
+	"otherIncomeWagesPeriodTwiceMonth_text" : "Twice a month",
+	"otherIncomeWagesPeriodMonthly_text" : "Monthly",
+	"otherIncomeWagesPeriodYearly_text" : "Yearly"
+}

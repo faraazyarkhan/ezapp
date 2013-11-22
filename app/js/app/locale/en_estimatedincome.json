@@ -1,0 +1,8 @@
+{ 
+    "estimatedIncomeHeading_text" : "Tell us about ",
+    "estimatedIncomelegend_text" : "Based on what you told us, if this person's income is steady each month, then it's about $0.00 per year. Is this how much you think he or she will get in 2014? ",
+    "isIncomeSteadyYes_text" : "Yes",
+    "isIncomeSteadyNo_text" : "No",
+	"incomeNextYear_text" : "BASED ON WHAT YOU KNOW TODAY, HOW MUCH DO YOU THINK YOU'LL MAKE IN 2014?",
+	"incomeCurrentYear_text" : "BASED ON WHAT YOU KNOW TODAY HOW MUCH DO YOU THINK YOU'LL MAKE THIS YEAR?"
+}

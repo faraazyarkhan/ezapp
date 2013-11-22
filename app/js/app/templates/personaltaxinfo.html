@@ -1,0 +1,41 @@
+<div id="person">
+    <h2><%- content.personalTaxInfoHeading_text %><span><%=Person.getFullName() %></span></h2>
+    
+    <div class="control-group">
+        <div class="controls">
+            <fieldset id="identifyTaxFilerfield" class="">
+                <legend>Who is the tax filer?</legend>
+                <div id='primaryList'>
+                </div>
+            </fieldset> 
+        </div>
+    </div>
+
+    <fieldset id="claimDependentsfield" class="" data-error-style="inline">
+        <legend><%- content.claimDependentslegend_text %></legend>
+                                
+        <div class="control-group">
+            <div class="controls">
+                <input type="radio" name="claimDependents" id="claimDependentsYes" value="Yes" data-toggle="expBox" data-target="#expBox1">
+                <label class="radio-label" for="claimDependentsYes">
+                    <span></span><%- content.claimDependentsYes_text %>
+                </label>        
+                <div class="expandBox hidden" id="expBox1">
+                    <div class="control-group">
+                        <div class="controls">
+                            <fieldset>
+                                <legend><%- content.nameOfSpouselegend2_text %></legend>
+
+                                <div id="dependentList"></div>
+                            </fieldset>
+                        </div>
+                    </div>  
+                </div>
+                <input type="radio" name="claimDependents" id="claimDependentsNo" value="No">
+                <label class="radio-label" for="claimDependentsNo">
+                    <span></span><%- content.claimDependentsNo_text %>
+                </label>  
+            </div>
+        </div>
+    </fieldset>
+</div>

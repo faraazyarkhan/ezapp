@@ -1,0 +1,63 @@
+<div id="ezapp">            
+    <fieldset id="audFS" class="" data-validate="audRequired">
+        <legend><%- content.coverage_text %></legend>
+
+        <div class="control-group">
+            <div class="controls"> 
+                <input type="radio" name="coverage" id="aud-indv" value="self">
+                <label class="radio-label" for="aud-indv"><span></span><%- content.self_text %></label>
+                      
+                <input type="radio" name="coverage" id="aud-indvfam" value="selfandfamily" data-toggle="expBox" data-target="#expBox1">
+                <label class="radio-label" for="aud-indvfam"><span></span><%- content.selfandfamily_text %></label>
+     
+                <div class="expandBox hidden" id="expBox1">
+                    <div class="control-group">
+                        <div class="controls"> 
+                            <label for="state-select1" data-error-style="inline"><%- content.noOfFamily_text %></label>
+                            <select id="state-select1" name="noOfFamily" class="select state" data-validate="stateSelectRequired">
+                                <option value="" selected="selected">Select an option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="radio" name="coverage" id="aud-nonIndvfam" value="otherfamily" data-toggle="expBox" data-target="#expBox2">
+                <label class="radio-label" for="aud-nonIndvfam"><span></span><%- content.otherfamily_text %></label>
+    
+                <div class="expandBox hidden" id="expBox2">
+                    <div class="control-group">
+                        <div class="controls"> 
+                            <label for="state-select2" data-error-style="inline"><%- content.noOfFamily_text2 %></label>
+                            <select id="state-select2" name="noOfFamily" class="select state" data-validate="stateSelectRequired">
+                                <option value="" selected="selected">Select an option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <p class="infoBox" role="complimentary"><strong><%- content.assistanceNote_text %></strong><%- content.assistanceNote2_text %></p>
+    </fieldset>
+</div>
+

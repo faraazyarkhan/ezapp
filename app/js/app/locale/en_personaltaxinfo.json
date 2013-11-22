@@ -1,0 +1,12 @@
+{ 
+    "personalTaxInfoHeading_text" : "Tell us about ",
+	"fileTaxJointlegend_text" : "Does this person plan to file a joint federal tax return with his or her spouse for 2014?",
+	"fileTaxJointYes_text" : "Yes",
+	"fileTaxJointNo_text" : "No",
+    "fileTaxJointNotApp_text" : "Not Married",
+	"nameOfSpouselegend_text" : "Who's this person's spouse?",
+	"nameOfSpouselegend2_text" : "Who is this person's dependents?",
+	"claimDependentslegend_text" : "Will this person and/or their spouse claim any dependents on their 2014 joint return?",
+	"claimDependentsYes_text" : "Yes",
+	"claimDependentsNo_text" : "No"
+}

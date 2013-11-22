@@ -1,0 +1,13 @@
+{ 
+    "coverageRenewalHeading_text" : "Renewal of coverage in future years",
+    "coverageRenewallegend_text" : "To make it easier to determine my eligibility for help paying for health coverage in future years, I agree to allow the Marketplace to use income data, including information from tax returns, for the next 5 years (the maximum number of years allowed). The Marketplace will send me a notice, let me make any changes, and I can opt out at any time. Do you agree or disagree?",
+    "coveragerenewalperiodlegend_text" : "Yes renew my eligibility automatically for the next:",
+    "renewalAgreementYes_text" : "Agree",
+    "renewalAgreementNo_text" : "Disagree",
+    "coverageRenewalPeriod5_text" : "5 years",
+	"coverageRenewalPeriod4_text" : "4 years",
+	"coverageRenewalPeriod3_text" : "3 years",
+	"coverageRenewalPeriod2_text" : "2 years",
+	"coverageRenewalPeriod1_text" : "1 years",
+	"coverageRenewalPeriodNo_text" : "Don't use tax data to renew my eligibility for help paying for health coverage."
+}

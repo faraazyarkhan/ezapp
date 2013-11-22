@@ -1,0 +1,55 @@
+<div id="person">
+<h2><%- content.otherIncomeHeading_text %><span><%=Person.getFullName() %></span></h2>
+
+<fieldset>
+    <legend>
+        <%- content.otherIncomelegend_text %>
+    </legend>
+        
+    <input type="checkbox" name="otherIncomeUnemployment" id="otherIncomeTypeUnemployed" value="Unemployment" data-toggle="expBox" data-target="#expBoxUnemployment"/> 
+    <label class="checkbox-label" for="otherIncomeTypeUnemployed"><span></span><%- content.otherIncomeTypeUnemployed_text %></label>
+    <div class="expandBox hidden" id="expBoxUnemployment">
+    </div>
+    <input type="checkbox" name="otherIncomeRetirementAccounts" id="otherIncomeTypeRetirement" value="Retirementaccounts" data-toggle="expBox" data-target="#expBoxIRA" /> 
+    <label class="checkbox-label" for="otherIncomeTypeRetirement"><span></span><%- content.otherIncomeTypeRetirement_text %></label>
+    <div class="expandBox hidden" id="expBoxIRA">  
+    </div>
+    <input type="checkbox" name="otherIncomePension" id="otherIncomeTypePension" value="Pension" data-toggle="expBox" data-target="#expBoxPension" /> 
+    <label class="checkbox-label" for="otherIncomeTypePension"><span></span><%- content.otherIncomeTypePension_text %></label>
+    <div class="expandBox hidden" id="expBoxPension">  
+    </div>
+     <input type="checkbox" name="otherIncomeSocialSecurity" id="otherIncomeTypeSocialSecurity" value="SSN" data-toggle="expBox" data-target="#expBoxSSN" /> 
+    <label class="checkbox-label" for="otherIncomeTypeSocialSecurity"><span></span><%- content.otherIncomeTypeSSN_text %></label>
+    <div class="expandBox hidden" id="expBoxSSN">  
+    </div>
+    <input type="checkbox" name="otherIncomeCapitalGains" id="otherIncomeTypeCapitalGains" value="CapitalGains" data-toggle="expBox" data-target="#expBoxCGains" /> 
+    <label class="checkbox-label" for="otherIncomeTypeCapitalGains"><span></span><%- content.otherIncomeTypeCapitalGains_text %></label>
+    <div class="expandBox hidden" id="expBoxCGains">      </div>
+    <input type="checkbox" name="otherIncomeInvestment" id="otherIncomeTypeInvestment" value="InvestmentIncome" data-toggle="expBox" data-target="#expBoxInvestment" /> 
+    <label class="checkbox-label" for="otherIncomeTypeInvestment"><span></span><%- content.otherIncomeTypeInvestment_text %></label>
+    <div class="expandBox hidden" id="expBoxInvestment">  
+    </div>
+    <input type="checkbox" name="otherIncomeNetRentalOrRoyality" id="otherIncomeTyperental" value="Netrentalroyality" data-toggle="expBox" data-target="#expBoxRental" /> 
+    <label class="checkbox-label" for="otherIncomeTyperental"><span></span><%- content.otherIncomeTyperental_text %></label>
+    <div class="expandBox hidden" id="expBoxRental">  
+    </div>
+    <input type="checkbox" name="otherIncomeNetFarmingOrFishing" id="otherIncomeTypefarming" value="Netfarmingfishing" data-toggle="expBox" data-target="#expBoxFarming" /> 
+    <label class="checkbox-label" for="otherIncomeTypefarming"><span></span><%- content.otherIncomeTypefarming_text %></label>
+    <div class="expandBox hidden" id="expBoxFarming">  
+    </div>
+    <input type="checkbox" name="otherIncomeAlimonyReceived" id="otherIncomeTypealimony" value="Alimonyreceived" data-toggle="expBox" data-target="#expBoxAlimony" /> 
+    <label class="checkbox-label" for="otherIncomeTypealimony"><span></span><%- content.otherIncomeTypealimony_text %></label>
+    <div class="expandBox hidden" id="expBoxAlimony">  
+    </div>
+    <input type="checkbox" name="otherIncomeOtherIncome" id="otherIncomeTypeOther" value="Otherincome" data-toggle="expBox" data-target="#expBoxOther" /> 
+    <label class="checkbox-label" for="otherIncomeTypeOther"><span></span><%- content.otherIncomeTypeOther_text %></label>
+    <div class="expandBox hidden" id="expBoxOther">  
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <input type="checkbox" name="otherIncomeNoneOfThem" id="otherIncomeTypeNone" value="Othernone" /> 
+            <label class="checkbox-label" for="otherIncomeTypeNone"><span></span><%- content.otherIncomeTypeNone_text %></label>
+        </div>
+    </div>
+</fieldset>
+</div>

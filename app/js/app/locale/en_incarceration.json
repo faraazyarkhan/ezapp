@@ -1,0 +1,11 @@
+{ 
+    "incarcerationlegend_text" : "Is anyone applying for health insurance on this application incarcerated (detained in jail)?",
+    "incarcerationYes_text" : "Yes",
+    "incarcerationNo_text" : "No",
+    "incarcerationInfolegend_text" : "Who is incarcerated?",
+	"incarcerationInfoPerson1_text" : "Person 1",
+	"incarcerationInfoPendingChargeslegend_text" : "Is this person pending disposition of charges?",
+	"incarcerationInfoPendingChargesYes_text" : "Yes",
+	"incarcerationInfoPendingChargesNo_text" : "No",
+	"incarcerationInfoPerson2_text" : "Person 2"
+}

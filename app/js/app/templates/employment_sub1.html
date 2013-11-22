@@ -1,0 +1,168 @@
+<div>
+    <div class="row-fluid">
+        <div class="control-group span6">
+            <div class="controls">
+                <label id="empNumber" class=""><%- content.employmentName_text %> </label>
+                <input id="employerName" bind-attr="employerName" name="employerName<%=empId %>" type="text" maxlength="25"/>    
+            </div>
+        </div>
+    </div>
+<fieldset>
+    <legend><%- content.employmentAddresslegend_text %> </legend>
+    <div class="row-fluid">
+        <div class="control-group span8">
+            <div class="controls">
+                <label for="streetName"><%- content.employerStreetName_text %> </label>
+                <input id="streetName" bind-attr="employerStreetName" name="employerStreetName<%=empId %>" type="text" value="Street Address" maxlength="25"/>    
+            </div>
+        </div>
+        <div class="control-group span4">
+            <div class="controls">
+                <label for="apt"><%- content.employerApt_text %> </label>
+                <input id="apt" bind-attr="employerApt" name="employerApt<%=empId %>" type="text" value="Apt. or Suite No." maxlength="25"/>  
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="control-group span6">
+            <div class="controls">
+                <label for="city"><%- content.employerCity_text %> </label>
+                <input id="city" bind-attr="employerCity" name="employerCity<%=empId %>" type="text" value="City" maxlength="25"/>  
+            </div>
+        </div>
+        <div class="control-group span6">
+        <div class="controls">
+            <label for="state" data-error-style="inline"><%- content.employerState_text %> </label>
+            <select id="state" bind-attr="employerState" name="employerState<%=empId %>" class="select state" data-validate="stateSelectRequired">
+                <option value="Select a State" selected="selected">Select a state</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AS">American Samoa</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="GU">Guam</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="MP">Northern Mariana Islands</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="PR">Puerto Rico</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VI">Virgin Islands</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>              
+        </div>
+    </div>
+    </div>
+    <div class="row-fluid">
+        <div class="control-group span6">
+            <div class="controls">
+                <label for="zipCode"><%- content.employerZipCode_text %> </label>
+                <input id="zipCode" bind-attr="employerZip" name="employerZip<%=empId %>" type="text" value="Zipcode" maxlength="10"/>  
+            </div>
+        </div>
+        <div class="control-group span6">
+            <div class="controls">
+                <label for="county"><%- content.employerCounty_text %> </label>
+                <input id="county" bind-attr="employerCounty" name="employerCounty<%=empId %>" type="text" value="County" maxlength="25"/>  
+            </div>
+        </div>
+    </div>
+</fieldset>      
+
+<fieldset id="Fieldset2" class="">
+    <legend class="HiddenText"><%- content.employmentPhonelegend_text %> </legend>
+    <div class="row-fluid">
+        <div class="control-group span8">
+            <div class="controls">
+                <label for="phoneNumber"><%- content.employerPhoneNumber_text %> </label>
+                <input id="phoneNumber" bind-attr="employerPhoneNumber" name="employerPhoneNumber<%=empId %>" type="text" value="555-555-5555" maxlength="12"/>  
+            </div>
+        </div>
+        <div class="control-group span4">
+            <div class="controls">
+                <label for="extension"><%- content.employerExtension_text %> </label>
+                <input id="extension" bind-attr="employerExtension" name="employerExtension<%=empId %>" type="text" value="Extension (optional)" maxlength="25"/>    
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<div class="control-group">
+    <div class="controls">
+        <label class=""><%- content.wageOrTips_text %> </label>
+        <div class="row-fluid">
+            <div class="span6">
+                <input id="wageOrTips" bind-attr="employerAmount" name="employerAmount<%=empId %>" type="text" value="" maxlength="25"/>  
+             </div>
+        </div>
+    </div>
+</div>
+<fieldset>
+    <legend><%- content.often_text %> </legend>
+    <div class="control-group">
+        <div class="controls">  
+            <input id="employerHowOftenHourly<%=empId %>" bind-attr="employerHowOften" type="radio" name="employerHowOften<%=empId %>" value="Hourly" data-toggle="expBox" data-target="#expBoxHourly<%=empId %>"/> 
+            <label for="employerHowOftenHourly<%=empId %>" class="radio-label"><span></span>Hourly</label>
+            <input id="employerHowOftenWeekly<%=empId %>" bind-attr="employerHowOften" type="radio" name="employerHowOften<%=empId %>" value="Weekly" data-toggle="expBox" data-target="#expBoxHourly<%=empId %>"/> 
+            <label for="employerHowOftenWeekly<%=empId %>" class="radio-label"><span></span>Weekly</label>
+            <input id="employerHowOften2Weeks<%=empId %>" bind-attr="employerHowOften" type="radio" name="employerHowOften<%=empId %>" value="2Weeks" data-toggle="expBox" data-target="#expBoxHourly<%=empId %>" /> 
+            <label for="employerHowOften2Weeks<%=empId %>" class="radio-label"><span></span>Every 2 Weeks</label>
+            <input id="employerHowOftenTwiceAMonth<%=empId %>" bind-attr="employerHowOften" type="radio" name="employerHowOften<%=empId %>" value="TwiceAMonth"  data-toggle="expBox" data-target="#expBoxHourly<%=empId %>"/> 
+            <label for="employerHowOftenTwiceAMonth<%=empId %>" class="radio-label"><span></span>Twice a month</label>
+            <input id="employerHowOftenMonthly<%=empId %>" bind-attr="employerHowOften" type="radio" name="employerHowOften<%=empId %>" value="Monthly"  data-toggle="expBox" data-target="#expBoxHourly<%=empId %>"/> 
+            <label for="employerHowOftenMonthly<%=empId %>" class="radio-label"><span></span>Monthly</label>
+            <input id="employerHowOftenYearly<%=empId %>" bind-attr="employerHowOften" type="radio" name="employerHowOften<%=empId %>" value="Yearly"  data-toggle="expBox" data-target="#expBoxHourly<%=empId %>"/> 
+            <label for="employerHowOftenYearly<%=empId %>" class="radio-label"><span></span>Yearly</label>
+        </div>
+    </div>
+</fieldset>
+<div class="control-group expandBox hidden" id="expBoxHourly<%=empId %>">
+    <div class="controls">
+        <label class=""><%- content.averageHoursPerWeek_text %> </label>
+        <input id="averageHoursPerWeek" bind-attr="employerAverageHoursPerWeek" name="employerAverageHoursPerWeek<%=empId %>" type="text" value="" maxlength="25"/>  
+    </div>
+</div>
+<hr class="empDashedLine">
+</div>

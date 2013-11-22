@@ -1,0 +1,106 @@
+<div id='person'>
+    <h2><%- content.haveOtherCoverageHeading_text %><span><%=Person.getFullName() %></span></h2>
+
+    <fieldset id="haveOtherCoveragefield" class="" data-error-style="inline">
+        <legend><%- content.haveOtherCoveragelegend_text %> </legend>
+            <input type="checkbox" name="TypeMedicaid" id="otherCoverageTypeMedicaid" value="TypeMedicaid" /> 
+            <label for="otherCoverageTypeMedicaid"><span></span><%- content.otherCoverageTypeMedicaid_text %></label>
+            <input type="checkbox" name="TypeCHIP" id="otherCoverageTypeCHIP" value="TypeCHIP" /> 
+            <label for="otherCoverageTypeCHIP"><span></span><%- content.otherCoverageTypeCHIP_text %></label>
+            <input type="checkbox" name="TypeMedicare" id="otherCoverageTypeMedicare" value="TypeMedicare" /> 
+            <label for="otherCoverageTypeMedicare"><span></span><%- content.otherCoverageTypeMedicare_text %></label>
+            <input type="checkbox" name="TypeTricare" id="otherCoverageTypeTricare" value="TypeTricare" /> 
+            <label for="otherCoverageTypeTricare"><span></span><%- content.otherCoverageTypeTricare_text %></label>
+            <input type="checkbox" name="TypeVA" id="otherCoverageTypeVA" value="TypeVA" /> 
+            <label for="otherCoverageTypeVA"><span></span><%- content.otherCoverageTypeVA_text %></label>
+            <input type="checkbox" name="TypePeace" id="otherCoverageTypePeace" value="TypePeace" /> 
+            <label for="otherCoverageTypePeace"><span></span><%- content.otherCoverageTypePeace_text %></label>
+            <input type="checkbox" name="TypeEGHP" id="otherCoverageTypeEGHP" value="TypeEGHP" data-toggle="expBox" data-target="#expBox1"/> 
+            <label for="otherCoverageTypeEGHP"><span></span><%- content.otherCoverageTypeEGHP_text %></label>
+            <div class="expandBox hidden" id="expBox1">
+                <div class="control-group">
+                    <div class="controls">
+                        <label class=""><%- content.nameOfInsurance_text %></label>
+                        <input id="nameOfInsurance" name="nameOfInsurance" type="text" value="555-555-5555" maxlength="25"/>   
+                    </div>
+                </div>               
+                <div class="control-group">
+                    <div class="controls">
+                        <label class=""><%- content.policyNumber_text %></label>
+                        <input id="policyNumbe" name="policyNumber" type="text" value="555-555-5555" maxlength="25"/>
+                    </div>
+                </div>                  
+
+                <fieldset id="isCOBRACoveragefield" class="" data-error-style="inline">
+                    <legend><%- content.isCOBRACoverage_text %></legend>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="radio" name="isCOBRACoverage" id="isCOBRACoverageYes" value="Yes">
+                            <label class="radio-label" for="isCOBRACoverageYes">
+                                <span></span><%- content.isCOBRACoverageYes_text %></label>
+                            <input type="radio" name="isCOBRACoverage" id="isCOBRACoverageNo" value="No">
+                            <label class="radio-label" for="isCOBRACoverageNo">
+                                <span></span><%- content.isCOBRACoverageNo_text %>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset id="isRetireePlanfield" class="" data-error-style="inline">
+                    <legend><%- content.isRetireePlan_text %></legend>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="radio" name="isRetireePlan" id="isRetireePlanYes" value="Yes">
+                            <label class="radio-label" for="isRetireePlanYes">
+                                <span></span><%- content.isRetireePlanYes_text %> </label>
+                            <input type="radio" name="isRetireePlan" id="isRetireePlanNo" value="No">
+                            <label class="radio-label" for="isRetireePlanNo">
+                                <span></span><%- content.isRetireePlanNo_text %> </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </div>
+            <input type="checkbox" name="TypeIndividualInsurance" id="otherCoverageTypeIndividualInsurance" value="TypeIndividualInsurance"/> 
+            <label for="otherCoverageTypeIndividualInsurance"><span></span><%- content.otherCoverageTypeIndividualInsurance_text %></label>
+            
+            <input type="checkbox" name="TypeOther" id="otherCoverageTypeOther" value="TypeOther" data-toggle="expBox" data-target="#expBoxOther"/> 
+            <label for="otherCoverageTypeOther"><span></span><%- content.otherCoverageTypeOther_text %></label>
+            <div class="expandBox hidden" id="expBoxOther">
+                <div class="control-group">
+                    <div class="controls">
+                        <label class=""><%- content.nameOfInsurance_text %></label>
+                        <input id="Text1" name="nameOfOtherInsurance" type="text" value="555-555-5555" maxlength="25"/>
+                    </div>
+                </div>                  
+
+                <div class="control-group">
+                    <div class="controls">
+                        <label class=""><%- content.policyNumber_text %></label>
+                        <input id="Text2" name="otherPolicyNumber" type="text" value="555-555-5555" maxlength="25"/>
+                    </div>
+                </div>                  
+
+                <fieldset id="isLimitedPlanfield" class="" data-error-style="inline">
+                    <legend><%- content.isLimitedPlan_text %></legend>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="radio" name="isLimitedPlan" id="isLimitedPlanYes" value="Yes">
+                            <label class="radio-label" for="isLimitedPlanYes">
+                                <span></span><%- content.isLimitedPlanYes_text %></label>
+                            <input type="radio" name="isLimitedPlan" id="isLimitedPlanNo" value="No">
+                            <label class="radio-label" for="isLimitedPlanNo">
+                                <span></span><%- content.isLimitedPlanNo_text %>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <input type="checkbox" name="TypeNone" id="otherCoverageTypeNone" value="TypeNone"/> 
+                    <label for="otherCoverageTypeNone"><span></span><%- content.otherCoverageTypeNone_text %></label>
+                </div>
+            </div>
+    </fieldset>
+</div>

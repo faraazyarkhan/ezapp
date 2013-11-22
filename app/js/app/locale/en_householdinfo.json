@@ -1,0 +1,19 @@
+{ 
+    "householdinfoHeading_text" : "Tell us about everyone in your household - Person <span name=\"span-current\"></span> of <span name=\"span-total\"></span>",
+    "householdinfoName_text" : "What's this person's name?",
+    "householdInfoYourFirstName_text" : "First Name",
+    "householdInfoYourMiddleName_text" : "Middle name (optional)",
+	"householdInfoYourLastName_text" : "Last Name",
+	"householdInfoYourSuffix_text" : "Suffix (optional)",
+	"householdInfoRelationshiplegend_text" : "What's their relationship to you?",
+	"householdInfoRelationship_text" : "Relationship",
+	"householdInfoDateOfBirthlegend_text" : "What's this person's date of birth?",
+	"householdInfoDateOfBirth_text" : "Date of Birth",
+	"householdInfoSSNlegend_text" : "What's this person's Social Security number (SSN)?",
+	"householdInfoSSN_text" : "SSN",
+	"householdInfoSexlegend_text" : "What's this person's sex?",
+	"householdInfoSex_text" : "Sex",
+	"householdInfoNeedCoveragelegend_text" : "Does this person need health coverage?",
+	"householdInfoNeedCoverageYes_text" : "Yes",
+	"householdInfoNeedCoverageNo_text" : "No"
+}

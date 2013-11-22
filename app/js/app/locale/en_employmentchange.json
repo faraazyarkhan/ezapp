@@ -1,0 +1,8 @@
+{ 
+    "employerChangeHeading_text" : "Tell us about ",
+    "employerChangelegend_text" : "In the past year, did this person have any of the job changes below? (Select all that apply. If this person didn't have one of these job changes, select \"None of these.\")",
+    "employmentChangeJobChange_text" : "Change jobs",
+    "employmentChangeStopWorking_text" : "Stop working",
+	"employmentChangeFewerHours_text" : "Start working fewer hours",
+	"employmentChangeNone_text" : "None of these"
+}

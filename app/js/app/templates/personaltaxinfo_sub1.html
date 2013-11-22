@@ -1,0 +1,22 @@
+<input type="radio" name="primary" id="primary<%=index%>" value="<%=index%>" data-toggle="expBox" data-target="#primary<%=index%>Expand"/>
+<label class="radio-label" for="primary<%=index%>" ><span></span><%=name%></label>
+
+<div class="expandBox hidden" id="primary<%=index%>Expand">
+    <div class="control-group">
+        <div class="controls">
+            <fieldset id="fileTaxJointfield" class="" data-error-style="inline">
+                <legend>Who is the tax filer's spouse?</legend>
+                
+                <div class="control-group">
+                    <div class="controls">
+                        <div id="spouseList<%=index%>" class="spouseList">
+                            <input type="radio" name="spouse<%=index%>" id="fileTaxJointNotApplicable<%=index%>" value="-1">
+                            <label class="radio-label" for="fileTaxJointNotApplicable<%=index%>">
+                                <span></span>Not married </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+ </div>

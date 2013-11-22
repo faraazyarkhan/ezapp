@@ -1,0 +1,12 @@
+{ 
+    "assistanceHeading_text" : "Tell us about ",
+    "existingMedicalConditionlegend_text" : "Does this person have a physical disability or mental health condition that limits their ability to work, attend school, or take care of their daily needs? (optional)",
+    "existingMedicalConditionYes_text" : "Yes",
+    "existingMedicalConditionNo_text" : "No",
+	"needsPhysicalAssistancelegend_text" : "Does this person need help with activities of daily living (like bathing, dressing, and using the bathroom), or live in a medical facility or nursing home? (optional)",
+	"needsPhysicalAssistanceYes_text" : "Yes",
+	"needsPhysicalAssistanceNo_text": "No",
+	"wantMedicalBillingAssitancelegend_text" : "Do you want help paying for this person's medical bills from the last 3 months? (optional)",
+	"wantMedicalBillingAssitanceYes_text" : "Yes",
+	"wantMedicalBillingAssitanceNo_text": "No"
+}

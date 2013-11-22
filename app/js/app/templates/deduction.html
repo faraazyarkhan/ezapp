@@ -1,0 +1,118 @@
+<div id="person">
+<h2><%- content.deductionHeading_text %><span><%=Person.getFullName() %></span></h2>
+
+<fieldset id="Fieldset3" class="" data-error-style="inline">
+    <legend>
+       <%- content.deductionlegend_text %> 
+    </legend>
+    <div class="note">
+        <strong><%- content.deductionNote_text %></strong><%- content.deductionNote2_text %>
+    </div>
+    <input type="checkbox" name="deductionsAlimonyPaid" id="deductionsAlimonyPaid" data-toggle="expBox" data-target="#expBoxAlimonyPaid" /> 
+    <label for="deductionsAlimonyPaid"><span></span><%- content.alimonyPayed_text %></label>
+    <div class="expandBox hidden" id="expBoxAlimonyPaid">  
+        <div class="control-group">
+            <div class="controls">
+                <label class=""><%- content.otherIncomeWages_text %></label>
+                <input id="alimonyPaidotherIncomeWages" name="deductionsAlimonyPaidAmount" type="text" value="" maxlength="25"/>
+            </div>
+        </div>  
+
+        <fieldset>
+            <legend><%- content.otherIncomeWagesPeriod_text %></legend>
+    
+            <div class="control-group">
+                <div class="controls">    
+                    <input type="radio" name="deductionsAlimonyHowOften" id="alimonyPaidotherIncomeWagesPeriodHourly" value="Hourly" /> 
+                    <label for="alimonyPaidotherIncomeWagesPeriodHourly"><span></span><%- content.otherIncomeWagesPeriodHourly_text %></label>
+                    <input type="radio" name="deductionsAlimonyHowOften" id="alimonyPaidotherIncomeWagesPeriodweekly" value="Weekly" /> 
+                    <label for="alimonyPaidotherIncomeWagesPeriodweekly"><span></span><%- content.otherIncomeWagesPeriodweekly_text %></label>
+                    <input type="radio" name="deductionsAlimonyHowOften" id="alimonyPaidotherIncomeWagesPeriod2weeks" value="Every 2 weeks" /> 
+                    <label for="alimonyPaidotherIncomeWagesPeriod2weeks"><span></span><%- content.otherIncomeWagesPeriod2weeks_text %></label>
+                    <input type="radio" name="deductionsAlimonyHowOften" id="alimonyPaidotherIncomeWagesPeriodTwiceMonth" value="Twice a month" /> 
+                    <label for="alimonyPaidotherIncomeWagesPeriodTwiceMonth"><span></span><%- content.otherIncomeWagesPeriodTwiceMonth_text %></label>
+                    <input type="radio" name="deductionsAlimonyHowOften" id="alimonyPaidotherIncomeWagesPeriodMonthly" value="Monthly" /> 
+                    <label for="alimonyPaidotherIncomeWagesPeriodMonthly"><span></span><%- content.otherIncomeWagesPeriodMonthly_text %></label>
+                    <input type="radio" name="deductionsAlimonyHowOften" id="alimonyPaidotherIncomeWagesPeriodYearly" value="Yearly" /> 
+                    <label for="alimonyPaidotherIncomeWagesPeriodYearly"><span></span><%- content.otherIncomeWagesPeriodYearly_text %></label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <input type="checkbox" name="deductionsStudentLoanIntrest" id="deductionsStudentLoanIntrest" data-toggle="expBox" data-target="#expBoxStudentLoan" /> 
+    <label for="deductionsStudentLoanIntrest"><span></span><%- content.studentLoanIntrest_text %></label>
+    <div class="expandBox hidden" id="expBoxStudentLoan">  
+        <div class="control-group">
+            <div class="controls">
+                <label class=""><%- content.otherIncomeWages_text %></label>
+                <input id="deductionsStudentLoanIntrestotherIncomeWages" name="deductionsStudentLoanIntrestAmount" type="text" value="" maxlength="25"/>
+            </div>
+        </div>  
+
+        <fieldset>
+            <legend><%- content.otherIncomeWagesPeriod_text %></legend>
+    
+            <div class="control-group">
+                <div class="controls">    
+                    <input type="radio" name="deductionsStudentLoanIntrestHowOften" id="studentLoanIntrestotherIncomeWagesPeriodHourly" value="Hourly" /> 
+                    <label for="studentLoanIntrestotherIncomeWagesPeriodHourly"><span></span><%- content.otherIncomeWagesPeriodHourly_text %></label>
+                    <input type="radio" name="deductionsStudentLoanIntrestHowOften" id="studentLoanIntrestotherIncomeWagesPeriodweekly" value="Weekly" /> 
+                    <label for="studentLoanIntrestotherIncomeWagesPeriodweekly"><span></span><%- content.otherIncomeWagesPeriodweekly_text %></label>
+                    <input type="radio" name="deductionsStudentLoanIntrestHowOften" id="studentLoanIntrestotherIncomeWagesPeriod2weeks" value="Every 2 weeks" /> 
+                    <label for="studentLoanIntrestotherIncomeWagesPeriod2weeks"><span></span><%- content.otherIncomeWagesPeriod2weeks_text %></label>
+                    <input type="radio" name="deductionsStudentLoanIntrestHowOften" id="studentLoanIntrestotherIncomeWagesPeriodTwiceMonth" value="Twice a month" /> 
+                    <label for="studentLoanIntrestotherIncomeWagesPeriodTwiceMonth"><span></span><%- content.otherIncomeWagesPeriodTwiceMonth_text %></label>
+                    <input type="radio" name="deductionsStudentLoanIntrestHowOften" id="studentLoanIntrestotherIncomeWagesPeriodMonthly" value="Monthly" /> 
+                    <label for="studentLoanIntrestotherIncomeWagesPeriodMonthly"><span></span><%- content.otherIncomeWagesPeriodMonthly_text %></label>
+                    <input type="radio" name="deductionsStudentLoanIntrestHowOften" id="studentLoanIntrestotherIncomeWagesPeriodYearly" value="Yearly" /> 
+                    <label for="studentLoanIntrestotherIncomeWagesPeriodYearly"><span></span><%- content.otherIncomeWagesPeriodYearly_text %></label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <input type="checkbox" name="deductionsotherDeductions" id="deductionsotherDeductions" data-toggle="expBox" data-target="#expBoxOtherDeductions" /> 
+    <label for="deductionsotherDeductions"><span></span><%- content.otherDeductions_text %></label>
+    <div class="expandBox hidden" id="expBoxOtherDeductions">  
+        <div class="control-group">
+            <div class="controls">
+                <label class=""><%- content.otherIncomeType_text %></label>
+                <input id="deductionsotherDeductionsotherIncomeType" name="deductionsotherDeductionsType" type="text" value="" maxlength="25"/>
+            </div>
+        </div>  
+
+        <div class="control-group">
+            <div class="controls">
+                <label class=""><%- content.otherIncomeWages_text %></label>
+                <input id="deductionsotherDeductionsotherIncomeWages" name="deductionsotherDeductionsAmount" type="text" value="" maxlength="25"/>
+            </div>
+        </div>  
+
+        <fieldset>
+            <legend><%- content.otherIncomeWagesPeriod_text %></legend>
+    
+            <div class="control-group">
+                <div class="controls">    
+                    <input type="radio" name="deductionsotherDeductionsHowOften" id="deductionsotherDeductionsotherIncomeWagesPeriodHourly" value="Hourly" /> 
+                    <label for="deductionsotherDeductionsotherIncomeWagesPeriodHourly"><span></span><%- content.otherIncomeWagesPeriodHourly_text %></label>
+                    <input type="radio" name="deductionsotherDeductionsHowOften" id="deductionsotherDeductionsotherIncomeWagesPeriodweekly" value="Weekly" /> 
+                    <label for="deductionsotherDeductionsotherIncomeWagesPeriodweekly"><span></span><%- content.otherIncomeWagesPeriodweekly_text %></label>
+                    <input type="radio" name="deductionsotherDeductionsHowOften" id="deductionsotherDeductionsotherIncomeWagesPeriod2weeksdio3" value="Every 2 weeks" /> 
+                    <label for="deductionsotherDeductionsotherIncomeWagesPeriod2weeksdio3"><span></span><%- content.otherIncomeWagesPeriod2weeks_text %></label>
+                    <input type="radio" name="deductionsotherDeductionsHowOften" id="deductionsotherDeductionsotherIncomeWagesPeriodTwiceMonth" value="Twice a month" /> 
+                    <label for="deductionsotherDeductionsotherIncomeWagesPeriodTwiceMonth"><span></span><%- content.otherIncomeWagesPeriodTwiceMonth_text %></label>
+                    <input type="radio" name="deductionsotherDeductionsHowOften" id="deductionsotherDeductionsotherIncomeWagesPeriodMonthly" value="Monthly" /> 
+                    <label for="deductionsotherDeductionsotherIncomeWagesPeriodMonthly"><span></span><%- content.otherIncomeWagesPeriodMonthly_text %></label>
+                    <input type="radio" name="deductionsotherDeductionsHowOften" id="deductionsotherDeductionsotherIncomeWagesPeriodYearly" value="Yearly" /> 
+                    <label for="deductionsotherDeductionsotherIncomeWagesPeriodYearly"><span></span><%- content.otherIncomeWagesPeriodYearly_text %></label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <input type="checkbox" name="deductionsNone" id="deductionsNone" /> 
+            <label for="deductionsNone"><span></span><%- content.noneOfThese_text %></label>
+        </div>
+    </div>
+</fieldset>
+</div>

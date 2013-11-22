@@ -1,0 +1,7 @@
+{ 
+    "needInfoByEmaillegend_text" : "Do you want to get information about this application by email?",
+    "needInfoByEmailYes_text" : "Yes",
+    "needInfoByEmailNo_text" : "No",
+    "preferredLanguagelegend_text" : "What is your preferred spoken or written language?",
+	"emailAddress_text" : "What's your email address?"
+}

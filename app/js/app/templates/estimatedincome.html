@@ -1,0 +1,30 @@
+<div id="person">
+<h2><%- content.estimatedIncomeHeading_text %><span><%=Person.getFullName() %></span></h2>
+
+<fieldset id="estimatedIncomefield" class="" data-error-style="inline">
+    <legend><%- content.estimatedIncomelegend_text %></legend>
+    
+    <div class="control-group">
+        <div class="controls">
+            <input type="radio" name="isIncomingSteady" id="isIncomeSteadyYes" value="Yes">
+            <label class="radio-label" for="isIncomeSteadyYes">
+                <span></span>
+                <%- content.isIncomeSteadyYes_text %>
+            </label>
+            <input type="radio" name="isIncomingSteady" id="isIncomeSteadyNo" value="No" data-toggle="expBox" data-target="#expBox1">
+            <label class="radio-label" for="isIncomeSteadyNo">
+                <span></span>
+                <%- content.isIncomeSteadyNo_text %>
+            </label>
+            <div class="expandBox hidden" id="expBox1">
+                <div class="control-group">
+                    <div class="controls">
+                        <label class=""><%- content.incomeNextYear_text %></label>
+                        <input id="incomeNextYear" name="incomeNextYear" type="text" value="" maxlength="25"/> 
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </div>
+</fieldset>
+</div>

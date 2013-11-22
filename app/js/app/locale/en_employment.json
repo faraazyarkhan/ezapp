@@ -1,0 +1,21 @@
+{ 
+    "employmentHeading_text" : "Tell us about ",
+    "employmentHeading2_text" : "What's this person's current work status?",
+	"employment_text" : "Employed",
+	"employmentName_text" : "Who's the employer 1?",
+	"employmentAddresslegend_text" : "What's the employer's address?",
+    "employerStreetName_text" : "Street Address",
+	"employerApt_text" : "Apt. or Suite No.",
+	"employerCity_text" : "City",
+	"employerState_text" : "State",
+	"employerZipCode_text" : "Zipcode",
+	"employerCounty_text" : "County",
+	"employerPhoneNumber_text" : "What's the employer's phone number?",
+	"employerExtension_text" : "Extension (optional)",
+	"employmentPhonelegend_text" : "What's the employer's phone number?",
+	"wageOrTips_text" : "How much does this person earn by working for this employer?",
+	"often_text" : "How often?",
+	"averageHoursPerWeek_text" : "AVERAGE HOURS WORKED EACH WEEK",
+	"employmentStatusNo_text" : "Not employed",
+	"employmentStatusSelf_text" : "Self-employed"
+}

@@ -1,0 +1,60 @@
+#wizard input[type="checkbox"],
+#wizard input[type="radio"],
+#search-filter input[type="checkbox"],
+#widget input[type="checkbox"],
+#widget input[type="radio"], 
+input[type="checkbox"], 
+input[type="radio"] 
+{
+  left: auto !important;
+  position: relative !important;
+  float: left;
+  padding-right: 10px !important;
+}
+label span
+{
+    display: none !important;
+}
+label span:focus 
+{
+    
+}
+/*Home*/
+#taskbar .caro {
+	max-width:832px;
+}
+
+#header .topnav.liteac-login {padding: 25px 30px 0 50px; margin: 0; cursor: pointer !important;}
+
+#header .topnav.liteac-login:hover {background: none;}
+  
+#wizard label span,
+#search-filter label span,
+#widget label span {
+  background-image:none; 
+  }
+#footer .calendar-text {
+  font-size:10px;
+  }
+  
+#filters #metallevel .custom-checkbox input
+{
+    top: 2px !important;
+}
+.custom-checkbox label
+{
+    background: none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+input[type="radio"]:focus {
+    outline: none !important;
+}
+
+
+.censusGroup .row-fluid .span8 
+{
+    width: 57.95%;
+}
+
